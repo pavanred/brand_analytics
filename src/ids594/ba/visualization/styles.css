@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+.node {
+	stroke: #121217;
+	stroke-width: 1.5px;
+	pointer-events: all;
+}
+			
+.link {
+	stroke: #121217;
+	stroke-width: 3px;   
+	display: inline; 
+	text-decoration: none;
+	pointer-events: all;
+	float:left;
+}
+
+.graph{
+	height:500px;
+	width:100%;
+	pointer-events: all;
+}
