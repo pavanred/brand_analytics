@@ -1,0 +1,16 @@
+library(igraph)
+
+el=read.csv("/Users/asifmansoor/Documents/UIC-CS-Semesters/Fall'13 Subjects/IDS BigData/Projects/Data/d3js_viz.tar/actual.csv")
+el[,1]=as.character(el[,1])
+el[,2]=as.character(el[,2])
+el=as.matrix(el)
+gr=graph.edgelist(el[,1:2],directed=FALSE)
+E(gr)$weight=as.numeric(el[,3])
+fg <- fastgreedy.community(gr)
+print(fg)
+
+membership(fc)
+sizes(fc)
+
+
+
